@@ -6,7 +6,7 @@ import avatar from '../assets/image-avatar.png'
 export default function Header() {
     return (
         <header className="w-full px-5 flex items-center lg:max-w-[1100px] lg:mx-auto lg:px-0">
-            <nav className="w-full flex items-center md:border-b border-b-black">
+            <nav className="w-full h-[80px] flex items-center md:border-b border-b-[hsl(219,9%,45%)]">
                 <div className="flex items-center gap-5">
                     <IconMenu className="cursor-pointer md:hidden" />
                     <Logo className='h-[24px]' />

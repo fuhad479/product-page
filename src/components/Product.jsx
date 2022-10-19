@@ -1,12 +1,13 @@
 import { ReactComponent as IconPlus } from '../assets/icon-plus.svg'
 import { ReactComponent as IconMinus } from '../assets/icon-minus.svg'
 import { ReactComponent as IconCart } from '../assets/icon-cart-1.svg'
+import Cart from './Cart'
 import shoe from '../assets/image-product-1.jpg'
 
 export default function Product() {
     return (
-        <div className="flex flex-col lg:flex-row items-center lg:gap-[100px] lg:max-w-[1100px] lg:mx-auto lg:py-[90px]">
-            <div className="rounded-[15px] overflow-hidden">
+        <div className="relative flex flex-col lg:flex-row items-center lg:gap-[100px] lg:max-w-[1100px] lg:mx-auto lg:py-[90px]">
+            <div className="overflow-hidden lg:rounded-[15px]">
                 <img
                     src={shoe}
                     alt="Product"
@@ -55,6 +56,7 @@ export default function Product() {
                     </button>
                 </div>
             </div>
+            <Cart />
         </div>
     )
 }
