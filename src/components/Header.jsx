@@ -5,18 +5,18 @@ import avatar from '../assets/image-avatar.png'
 
 export default function Header() {
     return (
-        <header className="px-5 flex items-center">
-            <nav className="w-full h-20 flex items-center md:border-b border-b-black">
+        <header className="w-full px-5 flex items-center lg:max-w-[1100px] lg:mx-auto lg:px-0">
+            <nav className="w-full flex items-center md:border-b border-b-black">
                 <div className="flex items-center gap-5">
-                    <IconMenu className="cursor-pointer" />
+                    <IconMenu className="cursor-pointer md:hidden" />
                     <Logo className='h-[24px]' />
                 </div>
                 <ul className="hidden ml-[50px] md:flex gap-[30px]">
-                    <li className="cursor-pointer">Collections</li>
-                    <li className="cursor-pointer">Men</li>
-                    <li className="cursor-pointer">Women</li>
-                    <li className="cursor-pointer">About</li>
-                    <li className="cursor-pointer">Contact</li>
+                    <li className="cursor-pointer py-[40px]">Collections</li>
+                    <li className="cursor-pointer py-[40px]">Men</li>
+                    <li className="cursor-pointer py-[40px]">Women</li>
+                    <li className="cursor-pointer py-[40px]">About</li>
+                    <li className="cursor-pointer py-[40px]">Contact</li>
                 </ul>
                 <div className="ml-auto flex items-center gap-5">
                     <IconCart className="cursor-pointer" />
